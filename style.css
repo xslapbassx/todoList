@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(120, 188, 252);}
+#taskInput {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+}
+#addTaskButton {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+}
+#addTaskButton:hover {
+    background-color: #93bbe6;
+    color: black;
+    transform: scale(1.05);
+}
+#filters button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 9px;
+}
+#filters button:hover {
+    background-color: #93bbe6;
+    color: black;
+    transform: scale(1.05);
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    font-style: italic;
+}
+#tasklist {
+    background-color: rgb(241, 243, 126);
+    padding: 10px;
+    height: 400px;
+    border-radius: 9px;
+    overflow-y: scroll;
+}
+li {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    background-color: rgb(241, 243, 126);
+    padding: 4px;
+    transition: opacity 0.3s ease;
+}
+li button {
+    opacity: 30%;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;            
+}
+li button:hover {
+    transform: scale(1.2)
+}
