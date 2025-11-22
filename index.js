@@ -39,8 +39,14 @@ function addTask() {
 
         // Clear input field
         input.value = '';
+
+        // Save and load tasks
+        window.addEventListener('load', loadTasks);
+        window.addEventListener('save', saveTasks);
+
     }
 };
+
 
 // Add task when the "Add Task" button is clicked
 addTaskButton.addEventListener('click', addTask);
