@@ -1,9 +1,16 @@
-body{
-    background-color: rgb(120, 188, 252);}
+body {
+    background-color: rgb(120, 188, 252); 
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+    font: 16px sans-serif;
+}  
 #taskInput {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 9px;
+    font: 16px sans-serif;
 }
 #addTaskButton {
     background-color: #007BFF;
@@ -11,6 +18,7 @@ body{
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 9px;
+    font: 16px sans-serif;
 }
 #addTaskButton:hover {
     background-color: #93bbe6;
@@ -22,6 +30,7 @@ body{
     color: white;
     padding: 10px;
     border-radius: 9px;
+    font: 16px sans-serif;
 }
 #filters button:hover {
     background-color: #93bbe6;
@@ -35,9 +44,11 @@ body{
 }
 #taskList {
     background-color: rgb(241, 243, 126);
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
     height: 400px;
     border-radius: 9px;
+    margin-top: 20px;
     overflow-y: scroll;
 }
 #taskList::-webkit-scrollbar {
@@ -55,7 +66,7 @@ li {
     gap: 4px;
     align-items: center;
     background-color: rgb(241, 243, 126);
-    padding: 4px;
+    padding: 2px;
     transition: opacity 0.3s ease;
     margin-bottom: 2px;
 }
@@ -68,4 +79,25 @@ li button {
 }
 li button:hover {
     transform: scale(1.2)
+}
+.task input[type="text"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-size: inherit;
+    width: 100%;
+}
+.task-input-edit {
+    background: transparent;
+    border: none;
+    outline: none;
+    transition: opacity 0.15s ease;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    width: 100%;
+    flex: 1;
 }
