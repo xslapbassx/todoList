@@ -101,3 +101,6 @@ li button:hover {
     width: 100%;
     flex: 1;
 }
+.task.dragging {
+    opacity: 0.5;
+}
