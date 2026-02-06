@@ -1,3 +1,4 @@
+// Save and load tasks
 export function saveTasks(taskList) {
     const tasks = [];
 
@@ -10,16 +11,16 @@ export function saveTasks(taskList) {
 
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
-
+// Load tasks
 export function loadTasks(addTask) {
     const saved = JSON.parse(localStorage.getItem('tasks')) || [];
     saved.forEach(task => addTask(task.text, task.completed));
 }
-
+// Save and load filters
 export function saveFilter(filter) {
     localStorage.setItem('filter', filter);
 }
-
+// Load filters
 export function loadFilter() {
     return localStorage.getItem('filter') || 'all';
 }

@@ -1,6 +1,6 @@
 let draggedItem = null;
 
-
+// Get the element that is under the cursor
 function getDragAfterElement(container, y) {
     const draggableElements = [...container.querySelectorAll('li:not(.dragging)')];
 
@@ -17,7 +17,7 @@ function getDragAfterElement(container, y) {
     }, { offset: Number.NEGATIVE_INFINITY }).element;
 }
 
-
+// Make the element draggable
 export function makeDraggable(li, taskList, onDrop) {
     li.draggable = true;
 

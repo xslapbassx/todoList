@@ -1,6 +1,6 @@
 import { saveFilter, loadFilter } from './storage.js';
 
-
+// Apply the filter
 export function applyFilter(taskList, filter) {
     taskList.querySelectorAll('li').forEach(li => {
         const completed = li.querySelector('.checkbox').checked;
@@ -12,7 +12,7 @@ export function applyFilter(taskList, filter) {
     });
 }
 
-
+// Initialize the filters
 export function initFilters(taskList, buttons) {
     const { showAll, showActive, showCompleted } = buttons;
 
